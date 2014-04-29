@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddRest(name="addrestaurant",method="post",action="/addrestaurant")
+        input#inputRestaurantName(type="text", placeholder="restname", name="restname")
+        input#inputRestPhone(type="text", placeholder="restphone", name="restphone")
+        button#btnSubmit(type="submit") submit

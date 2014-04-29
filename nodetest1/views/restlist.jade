@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1.
+        Restaurant List
+    ul
+        each rest in restlist
+            li #{rest.restname}, #{rest.restphone}
+           
